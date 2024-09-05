@@ -47,6 +47,18 @@ RUN pip install --upgrade pip
 
 RUN pip install spyder 
 
+#optionnal pip packages commonly used with tensorflow
+RUN apt-get install graphviz -y --fix-missing
+
+RUN pip install numpy
+RUN pip install pandas
+RUN pip install scikit-learn
+RUN pip install matplotlib
+RUN pip install seaborn
+RUN pip install plotly
+RUN pip install jupyterthemes
+RUN pip install pydot
+
 WORKDIR /home
 
 
